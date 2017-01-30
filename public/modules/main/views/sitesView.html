@@ -1,2 +1,4 @@
 <h2>Sites!</h2>
-<p>{{ sitesCtrl.tagline }}</p>
+<p ng-repeat="site in sitesCtrl.sites">
+  {{ site.name }}
+</p>

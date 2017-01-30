@@ -5,8 +5,10 @@
   .module('main')
   .controller('sitesController', SitesController);
 
-  function SitesController() {
+  SitesController.$inject = ["sites"];
+
+  function SitesController(sites) {
     var vm = this;
-    vm.tagline = 'To the moon and back!';
+    vm.sites = sites;
   }
 })();
