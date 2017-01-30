@@ -27,12 +27,6 @@
               });
           }]
         }
-      })
-      .state('base.nerd', {
-        url: '/nerd',
-        controller: 'nerdController',
-        controllerAs: 'nerdCtrl',
-        templateUrl: 'modules/main/views/nerdView.html',
       });
   }
 })();
