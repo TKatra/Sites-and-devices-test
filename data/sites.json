@@ -1,0 +1,42 @@
+{
+  "1537": {
+    "id": 1537,
+    "name": "Location A",
+    "description": null,
+    "externalid": null,
+    "devices": {
+      "00408C000001": {
+        "id": "00408C000001",
+        "name": "M1054-1",
+        "model": "M1054",
+        "version": "5.50.3",
+        "connected": false,
+        "videosources": 1
+      },
+      "00408C000002": {
+        "id": "00408C000002",
+        "name": "M1054-2",
+        "model": "M1054",
+        "version": "5.50.3",
+        "connected": false,
+        "videosources": 1
+      }
+    }
+  },
+  "1534": {
+    "id": 1534,
+    "name": "Location B",
+    "description": null,
+    "externalid": null,
+    "devices": {
+      "00408C000003": {
+        "id": "00408C000003",
+        "name": "M1054-3",
+        "model": "M1054",
+        "version": "5.50.3",
+        "connected": false,
+        "videosources": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "00408C000001": {
+    "id": "00408C000001",
+    "name": "M1054-1",
+    "description": "",
+    "externalid": "",
+    "siteid": 1537,
+    "alarmzoneid": "",
+    "version": "5.50.3",
+    "model": "M1054",
+    "type": "camera",
+    "enabled": true,
+    "locked": false,
+    "connected": false,
+    "statusled": "on",
+    "ptz_digital_enabled": false,
+    "audio": {
+      "source0": {
+        "outputgain": "0",
+        "audioencoding": "aac",
+        "enabled": false,
+        "inputgain": "auto",
+        "inputtype": "mic"
+      },
+      "clips": {
+        "6": "\/etc\/audioclips\/camera_clicks16k.au",
+        "7": "\/etc\/audioclips\/pssst_psst16k.au",
+        "8": "\/etc\/audioclips\/intruder16k.au",
+        "9": "\/etc\/audioclips\/dog_barking16k.au"
+      }
+    },
+    "safe_mode": false,
+    "timezone": "UTC",
+    "upgradestate": "waiting",
+    "upgradeaction": "upgrade",
+    "upgradeversion": "5.50.3.8",
+    "acl": {
+      "device": {
+        "relation": ["get", "set"],
+        "audio": ["get_transmit_url"]
+      }
+    }
+  },
+  "00408C000002": {
+    "id": "00408C000002",
+    "name": "M1054-2",
+    "description": "",
+    "externalid": "",
+    "siteid": 1537,
+    "alarmzoneid": "",
+    "version": "5.50.3",
+    "model": "M1054",
+    "type": "camera",
+    "enabled": true,
+    "locked": false,
+    "connected": false,
+    "statusled": "on",
+    "ptz_digital_enabled": false,
+    "audio": {
+      "source0": {
+        "outputgain": "0",
+        "audioencoding": "aac",
+        "enabled": false,
+        "inputgain": "auto",
+        "inputtype": "mic"
+      },
+      "clips": {
+        "6": "\/etc\/audioclips\/camera_clicks16k.au",
+        "7": "\/etc\/audioclips\/pssst_psst16k.au",
+        "8": "\/etc\/audioclips\/intruder16k.au",
+        "9": "\/etc\/audioclips\/dog_barking16k.au"
+      }
+    },
+    "safe_mode": false,
+    "timezone": "UTC",
+    "upgradestate": "waiting",
+    "upgradeaction": "upgrade",
+    "upgradeversion": "5.50.3.8",
+    "acl": {
+      "device": {
+        "relation": ["get", "set"],
+        "audio": ["get_transmit_url"]
+      }
+    }
+  },
+  "00408C000003": {
+    "id": "00408C000003",
+    "name": "M1054-3",
+    "description": "",
+    "externalid": "",
+    "siteid": 1534,
+    "alarmzoneid": "",
+    "version": "5.50.3",
+    "model": "M1054",
+    "type": "camera",
+    "enabled": true,
+    "locked": false,
+    "connected": false,
+    "statusled": "on",
+    "ptz_digital_enabled": false,
+    "audio": {
+      "source0": {
+        "outputgain": "0",
+        "audioencoding": "aac",
+        "enabled": false,
+        "inputgain": "auto",
+        "inputtype": "mic"
+      },
+      "clips": {
+        "6": "\/etc\/audioclips\/camera_clicks16k.au",
+        "7": "\/etc\/audioclips\/pssst_psst16k.au",
+        "8": "\/etc\/audioclips\/intruder16k.au",
+        "9": "\/etc\/audioclips\/dog_barking16k.au"
+      }
+    },
+    "safe_mode": false,
+    "timezone": "UTC",
+    "upgradestate": "waiting",
+    "upgradeaction": "upgrade",
+    "upgradeversion": "5.50.3.8",
+    "acl": {
+      "device": {
+        "relation": ["get", "set"],
+        "audio": ["get_transmit_url"]
+      }
+    }
+  }
+}
