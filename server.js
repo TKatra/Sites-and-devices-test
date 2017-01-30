@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(methodOverride('X-HTTP-Method-Override'));
 app.use(express.static(__dirname + '/public'));
 
-// require('./app/routes')(app);
+require('./app/routes')(app);
 app.listen(port);
 
 console.log('Magic happens on port ' + port);
