@@ -3,5 +3,14 @@
 var fs = require('fs');
 
 exports.get = function(req, res) {
-  res.json(JSON.parse(fs.readFileSync("data/sites.json", 'utf8')));
+  var sites = JSON.parse(fs.readFileSync("data/sites.json", 'utf8'));
+  var result = [];
+
+  for (var key in sites) {
+    if (sites.hasOwnProperty(key)) {
+      result.push(sites[key]);
+    }
+  }
+
+  res.json(result);
 }
