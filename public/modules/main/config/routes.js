@@ -18,7 +18,15 @@
         url: '/',
         controller: 'sitesController',
         controllerAs: 'sitesCtrl',
-        templateUrl: 'modules/main/views/sitesView.html'
+        templateUrl: 'modules/main/views/sitesView.html',
+        resolve: {
+          sites: ['siteService', function(siteService) {
+            return siteService.get()
+              .then(function(data) {
+                return data.data;
+              });
+          }]
+        }
       })
       .state('base.nerd', {
         url: '/nerd',
