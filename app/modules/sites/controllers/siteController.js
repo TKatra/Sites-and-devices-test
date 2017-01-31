@@ -14,7 +14,7 @@ exports.get = function(req, res) {
         deviceArray.push(sites[key].devices[device]);
       }
       sites[key].devices = deviceArray;
-
+      sites[key].showDevices = false;
       result.push(sites[key]);
     }
   }

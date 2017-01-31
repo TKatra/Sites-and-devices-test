@@ -1,4 +1,42 @@
 <h2>Sites!</h2>
-<p ng-repeat="site in sitesCtrl.sites">
-  {{ site.name }}
-</p>
+<div class="sites-list">
+  <div class="site-row" ng-repeat="site in sitesCtrl.sites" ng-click="site.showDevices = !site.showDevices">
+    <div class="site-item">
+      <div class="item-cell">
+        <p class="header">ID</p>
+        <p>{{ site.id }}</p>
+      </div>
+      <div class="item-cell">
+        <p class="header">Name</p>
+        <p>{{ site.name }}</p>
+      </div>
+    </div>
+
+    <div class="devices-list hidden" ng-class="{'hidden': !site.showDevices}">
+      <div class="device-item" ng-repeat="device in site.devices">
+        <div class="item-cell">
+          <p class="header">ID</p>
+          <p>{{ device.id }}</p>
+        </div>
+        <div class="item-cell">
+          <p class="header">Name</p>
+          <p>{{ device.name }}</p>
+        </div>
+        <div class="item-cell">
+          <p class="header">Connected</p>
+          <p ng-if="device.connected == true">Yes</p>
+          <p ng-if="device.connected == false">No</p>
+        </div>
+        <div class="item-cell">
+          <p class="header">Model</p>
+          <p>{{ device.model }}</p>
+        </div>
+        <div class="item-cell">
+          <p class="header">Version</p>
+          <p>{{ device.version }}</p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
