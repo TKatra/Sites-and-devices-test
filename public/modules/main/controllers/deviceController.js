@@ -10,6 +10,5 @@
   function DeviceController(device) {
     var vm = this;
     vm.device = device;
-    console.log(vm.device);
   }
 })();
