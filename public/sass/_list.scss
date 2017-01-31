@@ -20,17 +20,13 @@
   transition: background-color 0.2s;
 
   &:hover {
-    background-color: #EEEEEE;
+    background-color: #DDDDDD;
   }
-  
 }
 
 .devices-list {
   display: block;
   overflow: hidden;
-  // height: 200px;
-
-  transition: height 0.5s;
 
   &.hidden {
     height: 0;
@@ -38,15 +34,25 @@
 }
 
 .device-item {
-  cursor: pointer;
   padding: 5px;
-  background-color: #DDDDDD;
+  background-color: #EEEEEE;
   border-bottom: 1px solid #000000;
 
-  transition: background-color 0.2s;
+  .button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px;
+    margin: 5px 15px;
+    color: #000000;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
 
-  &:hover {
-    background-color: #EEEEEE;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: #F9F9F9;
+    }
   }
 }
 
