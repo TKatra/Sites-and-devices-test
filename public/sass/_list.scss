@@ -14,13 +14,13 @@
 .site-item {
   cursor: pointer;
   padding: 5px;
-  background-color: #BBBBBB;
+  background-color: #CCCCCC;
   border-bottom: 1px solid #000000;
 
   transition: background-color 0.2s;
 
   &:hover {
-    background-color: #DDDDDD;
+    background-color: #dbdbdb;
   }
 }
 
@@ -35,7 +35,7 @@
 
 .device-item {
   padding: 5px;
-  background-color: #EEEEEE;
+  background-color: #F3F3F3;
   border-bottom: 1px solid #000000;
 
   .button {
@@ -51,7 +51,7 @@
     transition: background-color 0.2s;
 
     &:hover {
-      background-color: #F9F9F9;
+      background-color: #fffbd7;
     }
   }
 }

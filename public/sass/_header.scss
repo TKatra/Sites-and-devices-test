@@ -2,12 +2,12 @@ header {
   position: relative;
   height: 50px;
   margin-bottom: 15px;
-  background-color: #444444;
+  background-color: #333333;
 
   h1 {
     padding: 8px;
     text-align: center;
-    color: #FFFFFF;
+    color: #EEEEEE;
   }
   .button {
     position: absolute;
@@ -25,7 +25,7 @@ header {
     transition: background-color 0.2s;
 
     &:hover {
-      background-color: #F9F9F9;
+      background-color: #fffbd7;
     }
   }
 }
