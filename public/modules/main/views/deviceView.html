@@ -1,2 +1,27 @@
 <h2>Device : {{ deviceCtrl.device.name }} on site: {{ deviceCtrl.device.siteName }}</h2>
+<div class="clearfix">
+  <div class="partition">
+    <p>ID: {{ deviceCtrl.device.id }}</p>
+    <p>Name: {{ deviceCtrl.device.name }}</p>
+    <p>Model: {{ deviceCtrl.device.model }}</p>
+    <p>Site: {{ deviceCtrl.device.siteName }}</p>
+    <p>Type: {{ deviceCtrl.device.type }}</p>
+    <p>Current version: {{ deviceCtrl.device.version }}</p>
+  </div>
+  <div class="partition">
+    <p ng-if="deviceCtrl.device.connected == true">Connected: Yes</p>
+    <p ng-if="deviceCtrl.device.connected == false">Connected: No</p>
 
+    <p ng-if="deviceCtrl.device.enabled == true">Enabled: Yes</p>
+    <p ng-if="deviceCtrl.device.enabled == false">Enabled: No</p>
+
+    <p ng-if="deviceCtrl.device.safe_mode == true">Safe mode: Yes</p>
+    <p ng-if="deviceCtrl.device.safe_mode == false">Safe mode: No</p>
+
+    <p ng-if="deviceCtrl.device.ptz_digital_enabled == true">PTZ digital enabled: Yes</p>
+    <p ng-if="deviceCtrl.device.ptz_digital_enabled == false">PTZ digital enabled: No</p>
+
+    <p>Timezone: {{ deviceCtrl.device.timezone }}</p>
+    <p>Upgrade version: {{ deviceCtrl.device.upgradeversion }}</p>
+  </div>
+</div>
