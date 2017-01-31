@@ -11,6 +11,9 @@
     return {
       get: function() {
         return $http.get('/api/devices');
+      },
+      getById: function(data) {
+        return $http.get('/api/devices/' + data);
       }
     };
   }

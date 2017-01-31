@@ -27,6 +27,20 @@
               });
           }]
         }
+      })
+      .state('base.device', {
+        url: '/device/:id',
+        controller: 'deviceController',
+        controllerAs: 'deviceCtrl',
+        templateUrl: 'modules/main/views/deviceView.html',
+        resolve: {
+          device: ['$stateParams', 'deviceService', function($stateParams, deviceService) {
+            return deviceService.getById($stateParams.id)
+              .then(function(data) {
+                return data.data;
+              });
+          }]
+        }
       });
   }
 })();

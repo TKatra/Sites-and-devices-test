@@ -1,7 +1,7 @@
 <h2>Sites!</h2>
 <div class="sites-list">
-  <div class="site-row" ng-repeat="site in sitesCtrl.sites" ng-click="site.showDevices = !site.showDevices">
-    <div class="site-item">
+  <div class="site-row" ng-repeat="site in sitesCtrl.sites">
+    <div class="site-item" ng-click="site.showDevices = !site.showDevices">
       <div class="item-cell">
         <p class="header">ID</p>
         <p>{{ site.id }}</p>
@@ -9,6 +9,10 @@
       <div class="item-cell">
         <p class="header">Name</p>
         <p>{{ site.name }}</p>
+      </div>
+      <div class="item-cell">
+        <p class="header">Devices attached</p>
+        <p>{{ site.devices.length }}</p>
       </div>
     </div>
 
@@ -35,8 +39,8 @@
           <p class="header">Version</p>
           <p>{{ device.version }}</p>
         </div>
+        <a class="button" ui-sref="base.device({ id: device.id })">Read more</a>
       </div>
     </div>
-    
   </div>
 </div>
